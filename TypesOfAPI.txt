@@ -1,0 +1,29 @@
+Types of API's
+*******************
+
+Open APIs– Public APIs–are publicly available with no access restriction.
+---------
+Partner APIs are APIs exposed by/to the strategic business partners. They are not available ------------
+publicly and need specific entitlement to access them.
+Both Open APIs and partner APIs are the tip of the iceberg because they are the most visible ones and are used to communicate beyond the boundaries of the company. They are usually exposed into a public API developer portal that developers can access in a self-service mode. While open APIs are completely open, there is an on-boarding process with a specific validation workflow to get access to partner APIs.
+
+
+Internal APIs–private APIs–are usually less known and only exposed by internal systems. 
+-------------
+They are also often not meant for consumption outside of the company but for being used across different internal development teams for better productivity and reuse of services. A good governance process consists in exposing them into an internal API developer portal that connects to the internal IAM systems to authenticate and authorize users to access the right set of APIs.
+
+
+*******************************************************************
+API types
+Data and service APIs
+Beyond the difference between an internal, partner and open APIs, we should mention another approach to categorize APIs:
+
+Data APIs provide CRUD access to underlying data sets. These APIs are needed to serve some fundamental data coming from SaaS application–with help from SaaS connectors–or internal data stores.
+
+Internal service APIs consist in exposing internal services–often legacy SOAP Web 
+Services–reflecting parts of internal processes or some complex actions–into REST APIs.
+
+External service APIs are third-party services that can be easily embedded into the existing services of the company to bring additional value, e.g. an external e-mail service like Sendgrid.
+
+Composite APIs combine multiple data or service APIs. They are built using API orchestration capabilities of an API creation tool.
+User experience APIs leverage composite APIs to help app developers provide the right experience for each specific device (desktop, mobile, tablet, VPA, IoT).

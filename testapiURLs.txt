@@ -1,0 +1,46 @@
+http://jsonplaceholder.typicode.com/users
+http://jsonplaceholder.typicode.com/posts
+http://thetestingworldapi.com/api/studentsDetails
+https://footballpool.dataaccess.eu/info.wso?WSDL
+http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?wsdl
+
+http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl
+http://www.webservicex.com/CurrencyConvertor.asmx?wsdl
+http://www.webservicex.com/globalweather.asmx?wsdl
+http://www.thomas-bayer.com/axis2/services/BLZService?wsdl
+
+https://reqres.in/
+
+REST:
+https://restcountries.eu/rest/v2/all
+
+
+
+http://www.membrane-soa.org/service-proxy/oauth2-provider-client.htm
+http://thomas-bayer.com/
+
+
+
+pm.test("Test ID", function () {
+var jsonData = pm.response.json();
+let id=jsonData.data.last_name;
+console.log(jsonData.data.last_name);    
+pm.expect(jsonData.data.last_name).to.eql("Adwards");
+    
+    
+});
+
+
+
+
+var jsondata=pm.response.json();
+pm.test("ID test",function(){
+  console.log(jsondata.data.id);  
+  pm.expect(jsondata.data.id).to.eql(2); 
+});
+var newname="Avik2333";
+console.log(jsondata.data.first_name);
+pm.test("Name test",function(){
+pm.expect(jsondata.data.first_name).to.eql(newname) ;
+});
+
